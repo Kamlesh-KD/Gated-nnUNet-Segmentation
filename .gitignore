@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.venv-backups/
+.hf_home/
+.conda/
+
+
+# Datasets
+*.nii
+*.nii.gz
+*.npy
+*.npz
+
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Logs and outputs
+logs/
+outputs/
+wandb/
+tensorboard/
+
+# System files
+.DS_Store
+Thumbs.db
+
+/data/*
+!/data/.gitkeep
+
+# Ignore nnUNet data contents
+/segmentation/data/nnUNet_results/*
+/segmentation/data/nnUNet_raw/*
+/segmentation/data/nnUNet_preprocessed/*
+
+# Keep directory placeholders
+!/segmentation/data/nnUNet_results/.gitkeep
+!/segmentation/data/nnUNet_raw/.gitkeep
+!/segmentation/data/nnUNet_preprocessed/.gitkeep
